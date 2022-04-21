@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+textarea {
+	resize: vertical;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	font-family: "Roboto", sans-serif;
+}
+/* Nav-sec*/
+.nav-bar {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(18, 91, 80);
+	padding: 2%;
+	color: aliceblue;
+}
+.nav-list {
+	display: none;
+}
+.welcome-sec {
+	width: 100%;
+	height: 75vh;
+	background-image: url(https://images.unsplash.com/photo-1471646174523-327e108889e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.welcome-sec h1 {
+	font-size: 2.5rem;
+	width: 75%;
+	margin-left: 2rem;
+	color: aliceblue;
+}
+.welcome-sec p {
+	font-size: 2rem;
+	margin: 2rem;
+	color: aliceblue;
+}
+.welcome-sec button {
+	width: 200px;
+	height: 60px;
+	background-color: transparent;
+	border: 3px solid white;
+	color: rgb(153, 253, 253);
+	padding: 1.5%;
+	margin-left: 2rem;
+	font-size: 1.75rem;
+}
+/* Spec-sec */
+.specialist-sec {
+	background-color: rgb(250, 245, 228);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4rem 0;
+}
+.specialist-sec h1 {
+	font-size: 2.25rem;
+	margin-bottom: 2rem;
+}
+.spec-circle {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: bisque;
+	margin: 2rem 0;
+	overflow: hidden;
+}
+.spec {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.spec h3 {
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+.spec p {
+	width: 90%;
+	text-justify: inter-character;
+}
+
+.offer-sec {
+	background-color: rgb(255, 99, 99);
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4rem 0;
+}
+.offer-sec h2 {
+	font-size: 2rem;
+}
+.box {
+	width: 300px;
+	height: 300px;
+	background-color: blanchedalmond;
+	margin: 4rem 0;
+	overflow: hidden;
+	-webkit-box-shadow: 20px 21px 34px 1px rgba(159, 162, 206, 1);
+	-moz-box-shadow: 20px 21px 34px 1px rgba(159, 162, 206, 1);
+	box-shadow: 20px 21px 34px 1px rgba(159, 162, 206, 1);
+}
+.new {
+	position: absolute;
+	border-radius: 50%;
+	background-color: red;
+	width: 3rem;
+	height: 3rem;
+	margin: -1.5rem;
+}
+
+.footer-sec {
+	background-color: rgb(18, 91, 80);
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding: 2%;
+}
