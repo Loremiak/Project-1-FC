@@ -43,57 +43,73 @@ table {
 body {
 	font-family: "Roboto", sans-serif;
 }
+.mid-container {
+	width: 960px;
+	margin: 0 auto;
+}
 /* Nav-sec*/
 .nav-bar {
-	width: 100%;
+	width: 100vh;
 	height: auto;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	background-color: rgb(18, 91, 80);
-	padding: 2%;
+	padding: 2% 8%;
 	color: aliceblue;
 }
 .nav-list {
 	display: none;
 }
 .welcome-sec {
-	width: 100%;
+	width: 100vh;
 	height: 75vh;
 	background-image: url(https://images.unsplash.com/photo-1471646174523-327e108889e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80);
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 }
+.welcome-sec div {
+	margin-left: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 30vh;
+	width: 100vh;
+}
 .welcome-sec h1 {
 	font-size: 2.5rem;
 	width: 75%;
-	margin-left: 2rem;
 	color: aliceblue;
 }
 .welcome-sec p {
 	font-size: 2rem;
-	margin: 2rem;
 	color: aliceblue;
 }
 .welcome-sec button {
 	width: 200px;
-	height: 60px;
+	height: 50px;
 	background-color: transparent;
 	border: 3px solid white;
 	color: rgb(153, 253, 253);
 	padding: 1.5%;
-	margin-left: 2rem;
 	font-size: 1.75rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-/* Spec-sec */
+
+/* Specialist section */
+
 .specialist-sec {
 	background-color: rgb(250, 245, 228);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 4rem 0;
+	position: relative;
+	
 }
 .specialist-sec h1 {
 	font-size: 2.25rem;
@@ -103,9 +119,12 @@ body {
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
-	background-color: bisque;
 	margin: 2rem 0;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .spec {
 	display: flex;
@@ -117,13 +136,16 @@ body {
 	font-size: 1.25rem;
 }
 .spec p {
-	width: 90%;
-	text-justify: inter-character;
+	width: 75%;
+	text-justify: auto;
 }
 
+/* Offer section*/
+
 .offer-sec {
-	background-color: rgb(255, 99, 99);
+	background-color: rgb(246, 240, 206);
 	height: fit-content;
+	width: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -135,12 +157,34 @@ body {
 .box {
 	width: 300px;
 	height: 300px;
-	background-color: blanchedalmond;
 	margin: 4rem 0;
 	overflow: hidden;
-	-webkit-box-shadow: 20px 21px 34px 1px rgba(159, 162, 206, 1);
-	-moz-box-shadow: 20px 21px 34px 1px rgba(159, 162, 206, 1);
-	box-shadow: 20px 21px 34px 1px rgba(159, 162, 206, 1);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.box img {
+	width: 300px;
+	height: 300px;
+	z-index: 0;
+	position: relative;
+}
+.box div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box p {
+	font-size: 4.5rem;
+	font-weight: bold;
+	width: fit-content;
+	color: rgb(180, 36, 36);
 }
 .new {
 	position: absolute;
@@ -148,7 +192,9 @@ body {
 	background-color: red;
 	width: 3rem;
 	height: 3rem;
-	margin: -1.5rem;
+	z-index: 1;
+	margin-top: 2rem;
+	margin-left: -1.5rem;
 }
 
 .footer-sec {
@@ -157,4 +203,80 @@ body {
 	display: flex;
 	justify-content: center;
 	padding: 2%;
+	width: 100vh;
+}
+
+@media screen and (min-width: 576px) {
+	.nav-bar {
+		font-size: 1.5rem;
+	}
+	.nav-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 25vw;
+		list-style: none;
+	}
+
+	/* Welcome section*/
+
+	.welcome-sec {
+		height: 100vh;
+		width: 100vh;
+	}
+	.welcome-sec div {
+		margin-left: 3rem;
+	}
+	.welcome-sec h1 {
+		font-size: 2.75rem;
+		width: 55%;
+	}
+	.welcome-sec p {
+		font-size: 2.25rem;
+		color: aliceblue;
+	}
+	.welcome-sec button {
+		font-size: 2rem;
+	}
+
+	/* Spec-sec */
+
+	.specialist-sec {
+		padding: 6rem 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.specialist-sec h1 {
+		font-size: 2.75rem;
+		margin-bottom: 3rem;
+	}
+	.spec {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.spec h3 {
+		font-size: 1.5rem;
+	}
+	.spec p {
+		width: 75%;
+		text-justify: auto;
+		font-size: 1.25rem;
+	}
+
+	/* Offer section*/
+
+	.offer-sec {
+		padding: 6rem 0;
+	}
+	.offer-sec h2 {
+		font-size: 3rem;
+	}
+	.box p {
+		font-size: 4.75rem;
+	}
+
+	.footer-sec {
+		font-size: 1.5rem;
+	}
 }
