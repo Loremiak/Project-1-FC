@@ -43,27 +43,23 @@ table {
 body {
 	font-family: "Roboto", sans-serif;
 }
-.mid-container {
-	width: 960px;
-	margin: 0 auto;
-}
 /* Nav-sec*/
 .nav-bar {
-	width: 100vh;
+	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	background-color: rgb(18, 91, 80);
-	padding: 2% 8%;
+	padding: 2% 2rem;
 	color: aliceblue;
 }
 .nav-list {
 	display: none;
 }
 .welcome-sec {
-	width: 100vh;
+	width: 100vw;
 	height: 75vh;
 	background-image: url(https://images.unsplash.com/photo-1471646174523-327e108889e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80);
 	display: flex;
@@ -76,7 +72,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	height: 30vh;
-	width: 100vh;
+	width: 100vw;
 }
 .welcome-sec h1 {
 	font-size: 2.5rem;
@@ -109,7 +105,6 @@ body {
 	align-items: center;
 	padding: 4rem 0;
 	position: relative;
-	
 }
 .specialist-sec h1 {
 	font-size: 2.25rem;
@@ -117,8 +112,8 @@ body {
 }
 .spec-circle {
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	margin: 2rem 0;
 	overflow: hidden;
 	display: flex;
@@ -131,13 +126,15 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
+.spec-desc {
+	width: 80%;
+	text-align: left;
+	text-justify: auto;
+}
 .spec h3 {
 	font-weight: bold;
 	font-size: 1.25rem;
-}
-.spec p {
-	width: 75%;
-	text-justify: auto;
+	margin-bottom: 0.5rem;
 }
 
 /* Offer section*/
@@ -145,7 +142,7 @@ body {
 .offer-sec {
 	background-color: rgb(246, 240, 206);
 	height: fit-content;
-	width: 100vh;
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -155,8 +152,8 @@ body {
 	font-size: 2rem;
 }
 .box {
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	margin: 4rem 0;
 	overflow: hidden;
 	position: relative;
@@ -181,7 +178,7 @@ body {
 	align-items: center;
 }
 .box p {
-	font-size: 4.5rem;
+	font-size: 3rem;
 	font-weight: bold;
 	width: fit-content;
 	color: rgb(180, 36, 36);
@@ -190,11 +187,11 @@ body {
 	position: absolute;
 	border-radius: 50%;
 	background-color: red;
-	width: 3rem;
-	height: 3rem;
+	width: 2.5rem;
+	height: 2.5rem;
 	z-index: 1;
-	margin-top: 2rem;
-	margin-left: -1.5rem;
+	margin-top: 2.5rem;
+	margin-left: -1rem;
 }
 
 .footer-sec {
@@ -203,7 +200,7 @@ body {
 	display: flex;
 	justify-content: center;
 	padding: 2%;
-	width: 100vh;
+	width: 100vw;
 }
 
 @media screen and (min-width: 576px) {
@@ -217,12 +214,14 @@ body {
 		width: 25vw;
 		list-style: none;
 	}
-
+	.nav-list li a {
+		text-decoration: none;
+		color: white;
+	}
 	/* Welcome section*/
 
 	.welcome-sec {
 		height: 100vh;
-		width: 100vh;
 	}
 	.welcome-sec div {
 		margin-left: 3rem;
@@ -250,17 +249,11 @@ body {
 		font-size: 2.75rem;
 		margin-bottom: 3rem;
 	}
-	.spec {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 	.spec h3 {
 		font-size: 1.5rem;
+		margin-bottom: 0.75rem;
 	}
 	.spec p {
-		width: 75%;
-		text-justify: auto;
 		font-size: 1.25rem;
 	}
 
@@ -272,11 +265,197 @@ body {
 	.offer-sec h2 {
 		font-size: 3rem;
 	}
-	.box p {
-		font-size: 4.75rem;
-	}
 
 	.footer-sec {
 		font-size: 1.5rem;
+	}
+}
+@media screen and (min-width: 776px) {
+	.nav-bar {
+		font-size: 1.75rem;
+		padding: 2% 6rem;
+	}
+	/* Welcome section*/
+
+	.welcome-sec div {
+		margin-left: 6rem;
+	}
+	.welcome-sec h1 {
+		font-size: 3rem;
+		width: 55%;
+	}
+	.welcome-sec p {
+		font-size: 2.5rem;
+		color: aliceblue;
+	}
+	.welcome-sec button {
+		font-size: 2.25rem;
+	}
+
+	/* Spec-sec */
+
+	.specialist-sec {
+		padding: 6rem 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.specialist-sec h1 {
+		align-self: flex-start;
+		font-size: 3.25rem;
+		margin-bottom: 6rem;
+		margin-left: 6rem;
+	}
+	.spec {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	.spec:nth-of-type(even) {
+		flex-direction: row-reverse;
+	}
+	.spec-circle {
+		margin: 0 6rem;
+	}
+	.spec-desc {
+		width: 55%;
+	}
+	.second {
+		text-align: right;
+	}
+	.spec h3 {
+		font-size: 2rem;
+	}
+	.spec p {
+		font-size: 1.5rem;
+	}
+
+	/* Offer section*/
+
+	.offer-sec {
+		padding: 6rem 0;
+	}
+	.offer-sec h2 {
+		font-size: 3.25rem;
+		align-self: flex-start;
+		margin-left: 6rem;
+	}
+	.offer-sec-box {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.box {
+		margin: 4rem;
+	}
+	.new {
+		position: absolute;
+		border-radius: 50%;
+		background-color: red;
+		width: 3rem;
+		height: 3rem;
+		z-index: 1;
+		margin-bottom: 780px;
+		margin-right: 465px;
+	}
+
+	.footer-sec {
+		font-size: 1.75rem;
+	}
+}
+
+@media screen and (min-width: 1140px) {
+	.nav-bar {
+		font-size: 1.75rem;
+		padding: 2% 6rem;
+	}
+	/* Welcome section*/
+
+	.welcome-sec div {
+		margin-left: 6rem;
+	}
+	.welcome-sec h1 {
+		font-size: 3rem;
+		width: 55%;
+	}
+	.welcome-sec p {
+		font-size: 2.5rem;
+		color: aliceblue;
+	}
+	.welcome-sec button {
+		font-size: 2.25rem;
+	}
+
+	/* Spec-sec */
+
+	.specialist-sec {
+		padding: 6rem 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.specialist-sec h1 {
+		align-self: flex-start;
+		font-size: 3.25rem;
+		margin-bottom: 6rem;
+		margin-left: 6rem;
+	}
+	.spec {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	.spec:nth-of-type(even) {
+		flex-direction: row-reverse;
+	}
+	.spec-circle {
+		margin: 0 6rem;
+	}
+	.spec-desc {
+		width: 55%;
+	}
+	.second {
+		text-align: right;
+	}
+	.spec h3 {
+		font-size: 2rem;
+	}
+	.spec p {
+		font-size: 1.5rem;
+	}
+
+	/* Offer section*/
+
+	.offer-sec {
+		padding: 6rem 0;
+	}
+	.offer-sec h2 {
+		font-size: 3.25rem;
+		align-self: flex-start;
+		margin-left: 6rem;
+	}
+	.offer-sec-box {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.box {
+		margin: 4rem;
+	}
+	.new {
+		position: absolute;
+		border-radius: 50%;
+		background-color: red;
+		width: 3rem;
+		height: 3rem;
+		z-index: 1;
+		margin-bottom: 1080px;
+		margin-right: 660px;
+	}
+
+	.footer-sec {
+		font-size: 1.75rem;
 	}
 }
