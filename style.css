@@ -20,26 +20,12 @@ a {
 	text-decoration: none;
 }
 
-input,
-button,
-textarea,
-select {
-	font-family: inherit;
-}
-
 button {
 	border: none;
 	cursor: pointer;
+	font-family: inherit;
 }
 
-textarea {
-	resize: vertical;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 body {
 	font-family: "Roboto", sans-serif;
 }
@@ -55,6 +41,7 @@ body {
 	background-color: rgb(18, 91, 80);
 	padding: 0 2rem;
 	color: aliceblue;
+	font-size: 1.5rem;
 }
 .nav-list {
 	display: none;
@@ -136,10 +123,11 @@ body {
 }
 .spec-desc p {
 	text-align: justify;
+	font-size: 1.2rem;
 }
 .spec h3 {
 	font-weight: bold;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 }
 
@@ -210,17 +198,22 @@ body {
 	width: 100vw;
 	text-align: center;
 }
+.footer-sec p {
+	font-size: 1.5rem;
+}
 .icon-div {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
 	align-items: center;
-	gap: 1rem;
+	gap: 1.5rem;
+}
+.fa-brands {
+	font-size: 2rem;
 }
 
 @media screen and (min-width: 576px) {
 	.nav-bar {
-		font-size: 1.5rem;
 		height: 40px;
 	}
 	.nav-list {
@@ -298,9 +291,6 @@ body {
 		font-size: 3rem;
 	}
 
-	.footer-sec {
-		font-size: 1.5rem;
-	}
 	.fa-brands {
 		font-size: 2.75rem;
 	}
