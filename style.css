@@ -161,7 +161,6 @@ body {
 	width: 150px;
 	height: 150px;
 	margin: 4rem 0;
-	overflow: hidden;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -169,8 +168,8 @@ body {
 	align-items: center;
 }
 .box img {
-	width: 300px;
-	height: 300px;
+	width: 150px;
+	height: 150px;
 	z-index: 0;
 	position: relative;
 }
@@ -195,9 +194,9 @@ body {
 	background-color: red;
 	width: 2.5rem;
 	height: 2.5rem;
-	z-index: 1;
-	margin-top: 2.5rem;
-	margin-left: -1rem;
+	top: -10px;
+	left: -10px;
+	z-index: 5;
 }
 
 .footer-sec {
@@ -295,10 +294,6 @@ body {
 	.box {
 		margin: 0;
 	}
-	.new {
-		margin-bottom: 56rem;
-		margin-left: -34rem;
-	}
 	.offer-sec h2 {
 		font-size: 3rem;
 	}
@@ -394,15 +389,6 @@ body {
 	.offer-sec-box {
 		width: 70%;
 	}
-	.box {
-		margin: 0;
-	}
-	.new {
-		width: 3rem;
-		height: 3rem;
-		margin-bottom: 36rem;
-		margin-left: -53rem;
-	}
 
 	.footer-sec {
 		font-size: 1.75rem;
@@ -493,6 +479,7 @@ body {
 	}
 	.box {
 		transition: all 0.5s ease-in-out;
+		z-index: 2;
 	}
 	.box:hover {
 		transform: scale(1.05);
