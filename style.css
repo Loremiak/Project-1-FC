@@ -386,13 +386,9 @@ body {
 }
 
 @media screen and (min-width: 996px) {
-	.main-container {
-		margin: 0 auto;
-		width: 960px;
-	}
 	.nav-bar {
 		font-size: 1.75rem;
-		padding: 0 6rem;
+		padding: 0 20rem;
 	}
 	.cursor-disable {
 		cursor: not-allowed;
@@ -400,7 +396,7 @@ body {
 	/* Welcome section*/
 
 	.welcome-sec div {
-		margin-left: 6rem;
+		padding: 0 15rem;
 	}
 	.welcome-sec h1 {
 		font-size: 3rem;
@@ -430,7 +426,7 @@ body {
 		align-self: flex-start;
 		font-size: 3.25rem;
 		margin-bottom: 6rem;
-		margin-left: 6rem;
+		padding-left: 15rem;
 	}
 	.spec {
 		display: flex;
@@ -466,6 +462,10 @@ body {
 	.offer-sec h2 {
 		font-size: 3.25rem;
 		align-self: flex-start;
+		padding: 0 15rem;
+	}
+	.offer-sec-box {
+		max-width: 600px;
 	}
 	.box {
 		transition: all 0.5s ease-in-out;
@@ -479,5 +479,8 @@ body {
 	.footer-sec {
 		font-size: 1.75rem;
 		width: 100%;
+	}
+	.fa-brands {
+		cursor: pointer;
 	}
 }
